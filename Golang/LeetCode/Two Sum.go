@@ -95,7 +95,7 @@ func twoSum(nums []int, target int) []int {
 			panic("Error: -10**9 <= nums[i] <= 10**9")
 		}
 
-		for n := i + 1; n < len(nums)-1; n++ {
+		for n := i + 1; n < len(nums); n++ {
 			if i != len(nums)-1 && nums[i] == target-nums[n] {
 				answer = append(answer, i, n)
 			} else {
